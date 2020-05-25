@@ -28,7 +28,7 @@ function getQuestions() {
       addQuetionData(questionsObject[currentIndex], qCount);
 
       // Start countdown
-      countdown(5, qCount, questionsObject);
+      countdown(60, qCount, questionsObject);
 
       // Click on submit
       submitButton.addEventListener(
@@ -203,7 +203,7 @@ function showNextQuestion(questionsObject, qCount) {
 
   // Start countdown
   clearInterval(countdownInterval);
-  countdown(5, qCount, questionsObject);
+  countdown(60, qCount, questionsObject);
 
   // Show Results
   showResults(qCount);
